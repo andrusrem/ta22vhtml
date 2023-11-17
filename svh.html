@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500px" height="500px" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="paike" gradientTransform="rotate(90)">
+            <stop offset="5%" stop-color="gold"/>
+            <stop offset="95%" stop-color="red"/>
+        </linearGradient>
+        <linearGradient id="maapind" gradientTransform="rotate(90)">
+            <stop offset="5%" stop-color="lightgreen"/>
+            <stop offset="95%" stop-color="green"/>
+        </linearGradient>
+        <linearGradient id="taevas" gradientTransform="rotate(90)">
+            <stop offset="75%" stop-color="lightskyblue"/>
+            <stop offset="95%" stop-color="blue"/>
+        </linearGradient>
+        <!--taevas-->
+        <rect x="" y="0" height="300" width="500" fill="url('#taevas')"></rect>
+        <!--maapind-->
+        <rect x="" y="300" height="250" width="500" fill="url('#maapind')"></rect>
+        <!--pilved-->
+        <!--esimene pilv-->
+        <circle cx="200" cy="100" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="200;205;210" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="210" cy="100" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="210;215;220" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="205" cy="93" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="205;210;215" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <!--teine pilv-->
+        <circle cx="300" cy="100" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="300;305;310" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="310" cy="100" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="310;315;320" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="305" cy="93" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="305;310;315" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <!--kolmas pilv-->
+        <circle cx="100" cy="150" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="100;105;110" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="110" cy="150" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="110;115;120" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="105" cy="143" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="105;110;115" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <!--neljas pilv-->
+        <circle cx="400" cy="150" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="400;405;410" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="410" cy="150" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="410;415;420" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="405" cy="143" r="10" style="fill:whitesmoke" >
+            <animate attributeName="cx" values="405;410;415" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <!--linnuke-->
+        <image href="./birds.png" width="100" height="100" x="110" y="100" style="background:lightskyblue">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                from="60 110 100"
+                to="0 120 110"
+                dur="40s"
+                repeatCount="indefinite" />
+        </image>
+
+        <image href="./birds.png" width="100" height="100" x="250" y="100" style="background:lightskyblue">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                from="60 250 100"
+                to="0 230 110"
+                dur="30s"
+                repeatCount="indefinite" />
+        </image>
+        <!--paike-->
+        <circle cx="30" cy="30" r="30" fill="url('#paike')">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                from="0 30 30"
+                to="360 30 30"
+                dur="3s"
+                repeatCount="indefinite" />
+        </circle>
+        <!--koer-->
+        <image href="./dogrun.png" height="30" width="50" x="150" y="460">
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                from="0 150 460"
+                to="10 150 460"
+                dur="0.5s"
+                repeatCount="indefinite" />
+                <animate attributeName="x" values="200;0" dur="2s" repeatCount="indefinite"></animate>
+        </image>
+        <!--paad-->
+        <image href="./boat.png" height="30" width="50" x="100" y=" 230">
+            <animate attributeName="x" values="0;500" dur="50s" repeatCount="indefinite"></animate>
+        </image>
+
+        <!--toru-->
+        <circle cx="265" cy="325" r="5" style="fill: grey;opacity:0.4;">
+            <animate attributeName="cy" values="325;320;315" dur="3s" repeatCount="indefinite"></animate>
+            <animate attributeName="cx" values="265;262;260" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="270" cy="333" r="5" style="fill: grey; opacity:0.6;">
+            <animate attributeName="cy" values="333;327;322" dur="3s" repeatCount="indefinite"></animate>
+            <animate attributeName="cx" values="270;268;265" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="273" cy="340" r="5" style="fill: grey; opacity:0.8;">
+            <animate attributeName="cy" values="340;335;330" dur="3s" repeatCount="indefinite"></animate>
+            <animate attributeName="cx" values="273;270;266" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="270" cy="345" r="5" style="fill: grey;">
+            <animate attributeName="cy" values="345;340;335" dur="3s" repeatCount="indefinite"></animate>
+            <animate attributeName="cx" values="270;268;265" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="270" cy="340" r="5" style="fill: grey;">
+            <animate attributeName="cy" values="350;345;343" dur="3s" repeatCount="indefinite"></animate>
+        </circle>
+        <rect id="torustik" x="265" y="350" height="20" width="10" ></rect>
+        
+        <!--katus-->
+        <polyline id="katus" points="240,400 300,330 360,400" style=" stroke: black; fill: brown;" ></polyline>
+        <!--pohiosa-->
+        <rect id="pohiosa" x="250" y="400" height="100" width="100" style="fill: bisque; stroke: black;" ></rect>
+        <!--uks-->
+        <rect id="uks" x="270" y="450" height="50" width="30" style="fill: brown; stroke:black;"></rect>
+        <circle id="uksekasi" cx="295" cy="475" r="3"></circle>
+        <!--aknad-->
+        <circle id="katiseakken" cx="300" cy="370" r="15" style="fill:lightgoldenrodyellow; stroke:black;"></circle>
+        <rect id="akken1" x="260" y="410" height="30" width="30" style="fill:lightgoldenrodyellow; stroke:black;"></rect>
+        <rect id="akken2" x="310" y="410" height="80" width="30" style="fill:lightgoldenrodyellow; stroke:black;"></rect>
+
+    </svg>
+</body>
+</html>

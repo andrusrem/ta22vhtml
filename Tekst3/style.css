@@ -1,0 +1,85 @@
+body {
+    
+    background: no-repeat url(../backgroundjpg.jpg);
+    background-size: 100%;
+}
+
+
+#starter{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    
+}
+#business{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
+}
+.price{
+    display: inline;
+    font-size: xx-large;
+}
+.in_months{
+    display: inline;
+    
+}
+/* https://www.w3schools.com/charsets/ref_emoji.asp */
+@counter-style space-counter {
+    system: cyclic;
+    symbols: "\2705";
+    suffix: " ";
+    
+}
+
+
+li {
+
+    list-style-type: space-counter;
+
+}
+
+.paketid {
+    display: flex;
+    max-width: 780px;
+    margin: 0 auto;
+
+}
+.pakett {
+    background: white;
+    border: 1px solid #ddd;
+    flex: 1;
+    border-radius: 30px;
+    padding: auto;
+    text-align: center;
+}
+.info{
+    margin-left: 30%;
+    text-align: left;
+}
+.button{
+    background-color: white; /* Green */
+    border-style: inherit;
+    border-color: black;
+    color: black;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.gray_small_text {
+    color:gray; 
+    font-size: small;
+}
+.gray_small_bold_text {
+    font-weight: bold; 
+    color: gray;
+    margin-bottom: 0; 
+    font-size: small;
+}

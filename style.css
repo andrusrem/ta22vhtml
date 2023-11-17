@@ -1,0 +1,25 @@
+h1{
+    color: #A3D395;
+}
+h2{
+    color: #709665;
+}
+h3{
+    color: #50A8FF;
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal normal 24px/29px Verdana;
+    letter-spacing: 0px;
+    color: #50A8FF;
+    opacity: 1;
+}
+p{
+    font: normal normal normal 18px/26px Times;
+}
+span{
+    font: italic normal normal 18px/26px Times;
+}
+body{
+    background: no-repeat url(./backgroundjpg.jpg) fixed;
+    background-size: 100%;
+}
