@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paigutamine 4: Semantilised elementid ja globaalsed atribuudid</title>
+    <style>
+        body
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        footer, header, main, article, aside, nav, section
+        {
+            padding: 1rem;
+            border-radius: 30px;
+            margin: 30px;
+
+        }
+        footer
+        {
+            background: lightsalmon;
+            text-align: center;
+            color:blue;
+        }
+        header
+        {
+            background: lightgoldenrodyellow;
+            
+        }
+        main
+        {
+            background: aquamarine;
+            display: flex;
+            flex-grow: 4;
+        }
+        article
+        {
+            background: lightblue;
+            display: flex;
+        }
+        aside
+        {
+            background: lightcoral;
+        }
+        nav
+        {
+            background: lightgray;
+        }
+        
+        .conteiner
+        {
+            background-color: aqua;
+            
+            height: 30vh;
+            
+        }
+        main .siseruum
+        {
+            flex-grow: 3;
+        }
+        main .sidebaar
+        {
+            flex-grow: 1;
+        }
+        .tulp
+        {
+            width: 33%;
+        }
+        li
+        {
+            margin-left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p style="text-align: center;">logo, otsing, autori nimi</p>
+        <!---->
+        <nav>
+            <ul style="display: flex;">
+                <li>item 1</li>
+                <li>menuulink 2</li>
+                <li>menuulink 3
+                    <ul style="display: flex;">
+                        <li>item1</li>
+                        <li>menu2</li>
+                        <li>menu4</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="siseruum">
+            <h2>Sisuruum</h2>
+            <section>
+                <p>Create a new folder with the same name as the controller under the Views folder. For example, if your controller is named "EventController", create a folder named "Event" under the Views folder.</p>
+                <a accesskey="4" href="https://bulma.io/">acceskey</a>
+            </section>
+        </article>
+        <aside class="sidebaar" contenteditable="true" draggable="true">
+            <h3 >Sidebaar</h3>
+            <p autocapitalize="characterss">Create a new folder with the same name as the controller under the Views folder. For example, if your controller is named "EventController", create a folder named "Event" under the Views folder.</p>
+            <form  action="">
+                <input type="text" autofocus spellcheck="true">
+                <input type="email" name="" id="" placeholder="wpd" spellcheck="true">
+                <input type="password"  placeholder="wpd" spellcheck="true">
+                <input type="number">
+                <input type="tel1">
+                <input type="url">
+                <button >Button</button>
+            </form>
+        </aside>
+    </main>
+    <article>
+        <section class="tulp">
+            <div class="conteiner">
+                <p>tulp</p>
+            </div>
+        </section>
+        <section class="tulp">
+            <div class="conteiner">
+                <p>tulp</p>
+            </div>
+        </section>
+        <section class="tulp">
+            <div class="conteiner">
+                <p>tulp</p>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
